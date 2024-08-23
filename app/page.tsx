@@ -106,12 +106,20 @@ export default function Home() {
     <div className="min-h-screen flex flex-col">
       {/* Header Section */}
       <header className="p-2 flex justify-between items-center fixed top-0 left-0 right-0 bg-white z-10 shadow-md">
-        <div className="flex-1">
-          <Image src="/codetionarylogo.jpg" alt="Codetionary" width={150} height={25} className="h-10 w-auto" />
-        </div>
-        <button className="bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium">
-          Join Waitlist
-        </button>
+        <a href="/" className="flex-1">
+          <Image
+            src="/codetionarylogo.jpg"
+            alt="Codetionary"
+            width={150}
+            height={25}
+            className="h-10 w-auto"
+          />
+        </a>
+        <a href="https://tally.so/r/m6R4RB" target="_blank" rel="noopener noreferrer" className="mx-auto">
+          <button className="text-white bg-blue-600 px-6 py-2 rounded-full border border-blue-600 hover:text-blue-600 hover:bg-white transition duration-300 font-semibold">
+            Join Waitlist
+          </button>
+        </a>
       </header>
 
       {/* Landing Page Section */}
@@ -123,15 +131,12 @@ export default function Home() {
           <p className="text-gray-600 mb-8">
             Master the art of full-stack engineering with Codetionary—the ultimate platform designed to elevate your coding skills from novice to pro.
           </p>
-          <div className="flex rounded-full overflow-hidden max-w-md mx-auto mb-12">
-            <input
-              type="email"
-              placeholder="Enter your email..."
-              className="flex-grow px-4 py-2 focus:outline-none"
-            />
-            <button className="bg-blue-600 text-white px-6 py-2 font-medium">
-              Join Waitlist
-            </button>
+          <div className="flex justify-center mb-12">
+            <a href="https://tally.so/r/m6R4RB" target="_blank" rel="noopener noreferrer">
+              <button className="text-white bg-blue-600 px-6 py-2 rounded-full border border-blue-600 hover:text-blue-600 hover:bg-white transition duration-300 font-semibold">
+                Join Waitlist
+              </button>
+            </a>
           </div>
           <a href="#benefits" className="text-blue-600 hover:underline">
             Learn more about the benefits
@@ -154,15 +159,12 @@ export default function Home() {
           <h2 className="text-2xl font-bold text-center mb-4 text-white">
             Start Your Coding Journey Today—Join Codetionary and Transform Your Skills into Expertise!
           </h2>
-          <div className="flex w-full max-w-md">
-            <input
-              type="email"
-              placeholder="Enter your email..."
-              className="flex-grow px-4 py-2 rounded-l-full border-2 border-white bg-transparent text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
-            />
-            <button className="bg-white text-blue-600 px-6 py-2 rounded-r-full hover:bg-gray-100 transition duration-300 font-semibold">
-              Join Waitlist
-            </button>
+          <div className="flex justify-center w-full max-w-md">
+            <a href="https://tally.so/r/m6R4RB" target="_blank" rel="noopener noreferrer">
+              <button className="bg-white text-blue-600 px-6 py-2 rounded-full border border-blue-600 hover:bg-blue-600 hover:text-white transition duration-300 font-semibold">
+                Join Waitlist
+              </button>
+            </a>
           </div>
         </div>
       </section>
@@ -188,3 +190,4 @@ export default function Home() {
     </div>
   );
 }
+

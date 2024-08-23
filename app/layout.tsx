@@ -29,13 +29,17 @@ function Header() {
       </div>
       
       {/* Join Waitlist button */}
-      <button className="text-sm py-1 px-3">
+      <a 
+        href="https://tally.so/r/m6R4RB" 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        className="text-sm py-1 px-3 bg-blue-500 text-white rounded hover:bg-blue-600 transition-colors"
+      >
         Join Waitlist
-      </button>
+      </a>
     </header>
   );
 }
-
 export default function RootLayout({
   children,
 }: Readonly<{
