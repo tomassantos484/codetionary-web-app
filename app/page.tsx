@@ -1,9 +1,10 @@
 import Image from "next/image";
 import React from "react";
-import SmoothScroll from "./components";
+import SmoothScroll from "./components/components";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faTiktok, faDiscord } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import Link from 'next/link';
 
 // BenefitBox Component
 interface BenefitBoxProps {
@@ -59,9 +60,9 @@ const MeetTheTeam: React.FC = () => {
             <p className="text-xl text-gray-600">
               Codetionary is built by students who went through the same struggles as you.
             </p>
-            <a href="https://google.com" className="text-xl text-blue-600 hover:underline inline-block">
+            <Link href="/team" className="text-xl text-blue-600 hover:underline inline-block">
               Learn More →
-            </a>
+            </Link>
           </div>
           <div className="flex-1">
             <Image
@@ -83,7 +84,7 @@ const HowItWorks: React.FC = () => {
   return (
     <section id="how-it-works" className="min-h-screen py-16 px-4 bg-gray-100 flex flex-col justify-center">
       <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-5xl font-bold text-blue-600 mb-12">How it Works</h2>
+        <h2 className="text-5xl font-bold text-blue-600 mb-12">How It Works</h2>
         <div className="bg-gray-300 aspect-video w-full flex items-center justify-center mb-12">
           <p className="text-gray-700">Demo inserted here</p>
         </div>
@@ -193,4 +194,5 @@ export default function Home() {
     </div>
   );
 }
+
 

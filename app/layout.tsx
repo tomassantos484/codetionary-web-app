@@ -49,13 +49,15 @@ export default function RootLayout({
     <ClerkProvider>
       <html lang="en" className="bg-[#F2F2F2]">
         <body className={inter.className}>
-          <SignedOut>
-            <SignInButton />
-          </SignedOut>
-          <SignedIn>
-            <UserButton />
-          </SignedIn>
           {children}
+          <div className="fixed top-4 right-4"> {/* Position auth buttons */}
+            <SignedOut>
+              <SignInButton />
+            </SignedOut>
+            <SignedIn>
+              <UserButton />
+            </SignedIn>
+          </div>
         </body>
       </html>
     </ClerkProvider>
