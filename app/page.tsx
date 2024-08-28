@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import SmoothScroll from "./components";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faTiktok, faDiscord } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
@@ -58,7 +59,7 @@ const MeetTheTeam: React.FC = () => {
             <p className="text-xl text-gray-600">
               Codetionary is built by students who went through the same struggles as you.
             </p>
-            <a href="#" className="text-xl text-blue-600 hover:underline inline-block">
+            <a href="https://google.com" className="text-xl text-blue-600 hover:underline inline-block">
               Learn More →
             </a>
           </div>
@@ -138,9 +139,11 @@ export default function Home() {
               </button>
             </a>
           </div>
-          <a href="#benefits" className="text-blue-600 hover:underline">
-            Learn more about the benefits
-          </a>
+          <SmoothScroll targetId="benefits">
+            <span className="text-blue-600 hover:underline cursor-pointer">
+              Learn more about the benefits
+            </span>
+          </SmoothScroll>
         </div>
       </section>
 
@@ -172,16 +175,16 @@ export default function Home() {
       {/* Footer Section */}
       <footer className="py-8 px-4 flex flex-col items-center justify-center space-y-6 bg-gray-100">
         <div className="flex space-x-8">
-          <a href="#" className="text-gray-400 hover:text-gray-600 text-3xl">
+          <a href="https://www.instagram.com" className="text-gray-400 hover:text-gray-600 text-3xl">
             <FontAwesomeIcon icon={faInstagram} />
           </a>
-          <a href="#" className="text-gray-400 hover:text-gray-600 text-3xl">
+          <a href="https://www.tiktok.com" className="text-gray-400 hover:text-gray-600 text-3xl">
             <FontAwesomeIcon icon={faTiktok} />
           </a>
           <a href="mailto:codetionaryteam@gmail.com" className="text-gray-400 hover:text-gray-600 text-3xl">
             <FontAwesomeIcon icon={faEnvelope} />
           </a>
-          <a href="#" className="text-gray-400 hover:text-gray-600 text-3xl">
+          <a href="https://discord.gg/yyEqUcNp" className="text-gray-400 hover:text-gray-600 text-3xl">
             <FontAwesomeIcon icon={faDiscord} />
           </a>
         </div>
